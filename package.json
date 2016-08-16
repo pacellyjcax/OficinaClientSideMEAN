@@ -1,0 +1,12 @@
+{
+  "name": "OficinaServerSideMEAN",
+  "version": "0.0.0",
+  "main": "servidor/app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node servidor/app.js"
+  }
+}
