@@ -1,34 +1,48 @@
 'use strict';
 
-var USUARIOS = [];
+var Usuario = require('./usuario.model');
 
 // Lista de Usuarios
 exports.listaTodos = function(req, res) {
-  var novoUsuario = {
-    nome : "Joao",
-    cod : 1
-  };
-
-  USUARIOS.push(novoUsuario);
-  return res.status(200).json(USUARIOS);
+  Usuario.find(function (err, usuarios) {
+    return res.status(200).json(usuarios);
+  });
 };
 
 // Pegar um Usuario
 exports.pegaUm = function(req, res) {
-  return res.status(200).json(USUARIOS);
+  Usuario.findById(req.params.id, function (err, usuario) {
+    if (!usuario) {
+      return res.status(404);
+    }
+    return res.json(usuario);
+  });
 };
 
 // Criar Usuario.
 exports.criaUm = function(req, res) {
-  return res.status(200).json();
+  Usuario.create(req.body, function(err, usuario) {
+    return res.status(201).json(usuario);
+  });
 };
 
 // Alterar Usuario
 exports.editaUm = function(req, res) {
-  return res.status(200).json();
+  // var consulta = {"_id": req.body._id};
+  // if(req.body._id) {
+  //   delete req.body._id;
+  // }
+  // var mudancas = req.body;
+  // var opcoes = {new: false};
+  // Usuario.findOneAndUpdate(consulta, mudancas, opcoes, function(err, usuario) {
+  //   return res.status(200).json(usuario);
+  // });
 };
 
 // Deletar Usuario.
 exports.deletaUm = function(req, res) {
-  return res.status(200).json();
+  Usuario.findById(req.params.id, function (err, usuario) {
+    usuario.remove(function(err) {
+    });
+  });
 };

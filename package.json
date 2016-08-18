@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "main": "servidor/app.js",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mongoose": "^4.5.9"
   },
   "devDependencies": {},
   "scripts": {
-    "start" : "node servidor/app.js"
+    "start": "node servidor/app.js"
   }
 }
