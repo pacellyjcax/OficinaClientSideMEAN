@@ -4,7 +4,8 @@
   "main": "servidor/app.js",
   "dependencies": {
     "express": "^4.14.0",
-    "mongoose": "^4.5.9"
+    "mongoose": "^4.5.9",
+    "body-parser": "~1.17.1"
   },
   "devDependencies": {},
   "scripts": {

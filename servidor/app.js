@@ -24,7 +24,7 @@ require('./configuracoes/express')(APP);
 
 require('./configuracoes/rotas')(APP);
 
-SERVIDOR.listen(PORTA, ENDEREÇO, () => {
+SERVIDOR.listen(PORTA, ENDEREÇO, function() {
   console.log('Servidor Node Rodando em http://'
 +ENDEREÇO+':'+PORTA);
 });
