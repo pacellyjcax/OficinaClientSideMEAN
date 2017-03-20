@@ -1,0 +1,17 @@
+{
+  "name": "OficinaServerSideMEAN",
+  "description": "",
+  "main": "app/app.js",
+  "authors": [
+    "Pacelly J. C. A. Xavier <pacellyjose@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pacellyjcax/OficinaClientSideMEAN",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
