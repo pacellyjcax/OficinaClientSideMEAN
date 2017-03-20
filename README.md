@@ -1,2 +1,2 @@
-## ServerSide MEAN Stack
-##### NodeJS - ExpressJS - MongoDB
+## ClientSide MEAN Stack
+##### AngularJS - NodeJS - ExpressJS - MongoDB
