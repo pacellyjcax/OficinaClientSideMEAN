@@ -3,11 +3,12 @@
 var http = require('http');
 var express = require('express');
 var mongoose = require('mongoose');
+var ambiente = require('./servidor/variaveis_ambiente');
 
 //DADOS 'DEFAULT' DO SERVIDOR
 var ENDEREÇO = '127.0.0.1';
 var PORTA = 80;
-var URI_DO_BD = 'mongodb://'+MONGODB_USER+':'+MONGODB_PASSWORD+'@clientesidemain-mongo:27017/clientesidemain-mongo';
+var URI_DO_BD = 'mongodb://'+ambiente.mongo_user+':'+ambiente.mongo_password+'@clientesidemain-mongo:27017/clientesidemain-mongo';
 
 //INICIALIZANDO A APLICAÇÃO DO EXPRESS
 var APP = express();
