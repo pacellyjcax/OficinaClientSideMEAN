@@ -14,11 +14,11 @@ var URI_DO_BD = 'mongodb://'+ambiente.mongo_user+':'+ambiente.mongo_password+'@c
 var APP = express();
 
 //INICIALIZANDO A CONEXÃO COM O MONGODB
-mongoose.createConnection(URI_DO_BD);
-mongoose.connection.on('error', function() {
-  console.log('Nao foi possivel se conectar com o BD');
-  process.exit(-1);
-});
+// mongoose.createConnection(URI_DO_BD);
+// mongoose.connection.on('error', function() {
+//   console.log('Nao foi possivel se conectar com o BD');
+//   process.exit(-1);
+// });
 
 var SERVIDOR = require('http').createServer(APP);
 require('./configuracoes/express')(APP);

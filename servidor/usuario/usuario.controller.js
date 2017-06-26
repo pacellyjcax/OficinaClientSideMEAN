@@ -15,19 +15,19 @@ exports.listaTodos = function(req, res) {
 
 // Pegar um Usuario
 exports.pegaUm = function(req, res) {
-  Usuario.findById(req.params.id, function (err, usuario) {
-    if (!usuario) {
-      return res.status(404);
-    }
-    return res.json(usuario);
-  });
+  // Usuario.findById(req.params.id, function (err, usuario) {
+  //   if (!usuario) {
+  //     return res.status(404);
+  //   }
+  //   return res.json(usuario);
+  // });
 };
 
 // Criar Usuario.
 exports.criaUm = function(req, res) {
-  Usuario.create(req.body, function(err, usuario) {
-    return res.status(201).json(usuario);
-  });
+  // Usuario.create(req.body, function(err, usuario) {
+  //   return res.status(201).json(usuario);
+  // });
 };
 
 // Alterar Usuario
@@ -45,8 +45,8 @@ exports.editaUm = function(req, res) {
 
 // Deletar Usuario.
 exports.deletaUm = function(req, res) {
-  Usuario.findById(req.params.id, function (err, usuario) {
-    usuario.remove(function(err) {
-    });
-  });
+  // Usuario.findById(req.params.id, function (err, usuario) {
+  //   usuario.remove(function(err) {
+  //   });
+  // });
 };
