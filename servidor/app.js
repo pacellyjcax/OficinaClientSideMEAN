@@ -6,8 +6,8 @@ var mongoose = require('mongoose');
 var ambiente = require('./configuracoes/variaveis_ambiente');
 
 //DADOS 'DEFAULT' DO SERVIDOR
-var ENDEREÇO = '127.0.0.1';
-var PORTA = 80;
+var ENDEREÇO = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+var PORTA = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var URI_DO_BD = 'mongodb://'+ambiente.mongo_user+':'+ambiente.mongo_password+'@clientesidemain-mongo:27017/clientesidemain-mongo';
 
 //INICIALIZANDO A APLICAÇÃO DO EXPRESS
