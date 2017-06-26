@@ -2,5 +2,9 @@
 
 angular.module('OficinaClientSideMEAN', [
 ]).controller('Cliente-ctrl', function($scope) {
-  $scope.name =  'Gustavo';
+  $scope.nomes = [
+    'Gustavo',
+    'João',
+    'Thiago'
+  ];
 });
