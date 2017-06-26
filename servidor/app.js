@@ -3,7 +3,7 @@
 var http = require('http');
 var express = require('express');
 var mongoose = require('mongoose');
-var ambiente = require('./servidor/variaveis_ambiente');
+var ambiente = require('./configuracoes/variaveis_ambiente');
 
 //DADOS 'DEFAULT' DO SERVIDOR
 var ENDEREÇO = '127.0.0.1';
