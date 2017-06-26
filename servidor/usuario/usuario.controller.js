@@ -4,9 +4,13 @@ var Usuario = require('./usuario.model');
 
 // Lista de Usuarios
 exports.listaTodos = function(req, res) {
-  Usuario.find(function (err, usuarios) {
-    return res.status(200).json(usuarios);
-  });
+  // Usuario.find(function (err, usuarios) {
+  //   return res.status(200).json(usuarios);
+  // });
+     return res.json({
+       nome:'pacelly',
+       pcr:'gustavo'
+     });
 };
 
 // Pegar um Usuario

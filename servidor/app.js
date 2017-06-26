@@ -6,8 +6,8 @@ var mongoose = require('mongoose');
 
 //DADOS 'DEFAULT' DO SERVIDOR
 var ENDEREÇO = '127.0.0.1';
-var PORTA = 3000;
-var URI_DO_BD = 'mongodb://localhost/OficinaServerSideMean';
+var PORTA = 80;
+var URI_DO_BD = 'mongodb://'+MONGODB_USER+':'+MONGODB_PASSWORD+'@clientesidemain-mongo:27017/clientesidemain-mongo';
 
 //INICIALIZANDO A APLICAÇÃO DO EXPRESS
 var APP = express();
